@@ -1,0 +1,299 @@
+body {
+    position: relative;
+}
+
+::placeholder{
+    font-style: italic;
+}
+/* <div style="width:100%;height:0;padding-bottom:151%;position:relative;"><iframe src="https://giphy.com/embed/Eqz8ZFUScPHH2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/pizza-stars-alien-Eqz8ZFUScPHH2">via GIPHY</a></p> */
+[class = "jumbotron text-center"] {
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/05/15/47/natural-4821583_960_720.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -10px 0;
+    margin-bottom: 0;
+    height: 100vh;
+    padding: 180px 180px 0 0;
+    /* animation: pengubah_warna 5s linear infinite alternate, trans 3s ease-out 1 forwards; */
+    transition: animation 5s;
+    overflow: hidden;
+}
+
+[class = "jumbotron text-center"] img {
+    width: 150px;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(1, 0, 15, 0.6);
+    opacity: 0;
+    animation: pudar 3s ease-out 1 forwards;
+}
+
+[class = "jumbotron text-center"] p, [class = "jumbotron text-center"] h2 {
+    color: aliceblue;
+    opacity: 0;
+    animation: pudar 3s ease-out 1 forwards;
+}
+
+
+@keyframes pengubah_warna {
+    0% {
+        background: rgb(0, 0, 77);
+    }
+    25% {
+        background: rgb(0, 89, 255);
+    }
+    50% {
+        background: rgb(0, 187, 255);
+    }
+    100% {
+        background: rgb(18, 74, 0);
+    }
+}
+
+/* @keyframes trans {
+    from {
+        padding-left: 0;
+    }
+    to {
+        padding-left: 220px;
+    }
+    
+} */
+
+@keyframes pudar {
+    from {
+        opacity: 0;
+        margin-left: 0;
+    }
+    to {
+        opacity: 1;
+        margin-left: 210px;
+    }
+}
+
+.col-sm-12 h1 {
+    font-weight: 600;
+}
+
+.col-sm-12 hr{
+    background-color: gray;
+    border: 1.2px solid gray;
+    width: 300px;
+}
+
+div[class*="col-sm-5"] p {
+    text-align: justify;
+}
+
+main[class="about"] {
+    height: 100vh;
+}
+
+[class~="jumbotron2"] {
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/05/15/47/natural-4821583_960_720.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.wrap1 {
+    opacity: 0;
+    transform: translate(-20px, 0);
+}
+
+.wrap2 {
+    opacity: 0;
+    transform: translate(20px, 0);
+}
+
+.wrap3 {
+    opacity: 0;
+    transform: translate(-20px, 0);
+}
+
+.wrap1.timbul{
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .5s;
+    transform: translate(0, 0);
+}
+
+.wrap2.timbul{
+    opacity: 1;
+    transition: .5s;
+    transition-delay: 1.5s;
+    transform: translate(0, 0);
+}
+
+.wrap3.timbul{
+    opacity: 1;
+    transition: .5s;
+    transition-delay:2.5s;
+    transform: translate(0, 0);
+}
+
+h2[class*="center"] {
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+a.thumbnail img {
+    z-index: 0;
+}
+
+a.thumbnail:hover {
+    z-index: 100;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+[class~="tamnail1"] {
+    margin-top: 70px;
+}
+
+[class~="tamnail1"] h3, [class~="tamnail1"] p {
+    color: black;
+    font-weight: bold;
+}
+
+[class~="tamnail1"] p {
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: 100;
+}
+
+.comment {
+    padding: 0 200px;
+    padding-bottom: 200px;
+}
+.comment h2 {
+    color: rgb(55, 54, 54);
+    margin-top: 90px;
+    font-size: 35px;
+}
+
+.comment hr {
+    background-color: gray;
+    border: 1.2px solid gray;
+    width: 300px;
+}
+
+footer[class*="jumbotron"] {
+    background: rgb(0, 0, 0);
+    height: 30px;
+    display: flex;
+    padding: 30px; 
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+footer[class~="jumbotron"] p {
+    color: aliceblue;
+    position: relative;
+    top: -5px;
+    font-size: 13px;
+    margin: auto;
+}
+
+footer[class="jumbotron"] :nth-child(2){
+    position: relative;
+    left: 55%;
+}
+
+nav[class*="navbar"]{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0;
+    padding: 15px 25px;
+    font-size: 17px;
+    opacity: 2;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    /* [class = "jumbotron text-center"]{
+        padding-left: 50px;
+    } */
+
+    [class = "jumbotron text-center"] img {
+        position: relative;
+        left: -150px;
+    }
+
+    [class = "jumbotron text-center"] h2, [class = "jumbotron text-center"] p {
+        position: relative;
+        left: -130px;
+    }
+
+    #home h2 {
+        font-size: 25px;
+        width: 400px;
+        left: -275px;
+    }
+
+    [class = "jumbotron text-center"] p {
+        font-size: 18px;
+        width: 100px;
+        text-align: center;
+        left: -124px;
+    }
+
+    .form-group {
+        position: relative;
+        left: -180px;
+    }
+
+    main.about {
+        height: 1200px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #judul2 {
+        margin-bottom: 50px;
+    }
+
+    h1.text-center, h2.text-center {
+        font-size: 25px;
+    }
+
+    #komentar{
+        margin-left: -115px;
+        margin-bottom: 50px;
+    }
+
+    .checkbox {
+        margin-left: -170px;
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .form-control{
+        width: 240px;
+        margin-bottom: 30px;
+    }
+
+    [class ~= "btn-primary"]{
+        margin-left: -170px;
+    }
+
+    footer.jumbotron p {
+        font-size: 10px;
+    }
+}
+
+
+
